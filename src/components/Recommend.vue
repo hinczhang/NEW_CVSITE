@@ -2,7 +2,7 @@
 
 <template>
     <div class="content" id="recommend">
-        <ModuleHeader :title="recommend.header.title + ' - 悬停鼠标可停止滑动 (Hover to stop sliding)'" :sub-title="recommend.header.subtitle "/> 
+        <ModuleHeader :title="recommend.header.title" :sub-title="recommend.header.subtitle"/> 
         <a-carousel dot-position="left" autoplay>
             <div style="width:100%;height: 100%;align-items: center;" v-for="card in recommend.cards" v-bind:key="card.title + card.subtitle">
                 <a-card hoverable class="recommend-card" :bordered="true" style="width: 80%">
@@ -18,7 +18,7 @@
                             </a-row>
                             <a-row style="margin: 0 auto; text-align: center;">
                                 <a-button style="margin-top: 7%;" type="primary" shape="round" :href="'./rec/' + card.file">
-                                    <a-icon type="download" /> RL Download
+                                    <a-icon type="download" />
                                 </a-button>
                             </a-row>
                         </a-col>

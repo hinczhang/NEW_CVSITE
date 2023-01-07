@@ -18,10 +18,10 @@
                 <img draggable="false" src="../assets/avatar.jpg">
             </span>
             <div>
-                <h1>{{banner.title || '林中小舍'}}</h1>
+                <h1>{{banner.title}}</h1>
                 <h3 class="typer white">
                     技能 Technique: 
-                    <vue-typer :text="banner.desc || '林舍'" :type-delay='200' eraseStyle='select-all'></vue-typer>
+                    <vue-typer :text="banner.desc" :type-delay='200' eraseStyle='select-all'></vue-typer>
                 </h3>
             </div>
         </div>
