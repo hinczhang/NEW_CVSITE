@@ -38,7 +38,7 @@ Vue.config.productionTip = false;
 Vue.use(Antd);
 Vue.use(VueSmoothScroll);
 Vue.use(VueMarkdown);
-
+Vue.prototype.$CH_EN = true;
 store.dispatch('init');
 router.beforeEach((to, from, next) => {
     document.title = store.getters.title + (to.meta.title ? ' - ' + to.meta.title : '');

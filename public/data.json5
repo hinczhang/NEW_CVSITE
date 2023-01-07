@@ -80,11 +80,11 @@
           md: "**<u>Intern Radar Simulation 雷达仿真实习生</u>**\
           \n\
           \n - 支持用于自主应用的高级雷达系统建模的雷达仿真。\
-          \n *Support for the radar simulation for modeling of advanced radar systems for autonomous applications*\
+          \n *Support for the radar simulation for modeling of advanced radar systems for autonomous applications.*\
           \n - 帮助生成支持工具，例如USD格式的转换以供雷达模拟工具使用。\
           \n *Help in generating support tools for e.g. the conversion of the USD format for radar simulation tool usage.*\
           \n - 将GPU加速集成到内部雷达仿真工具链中，改进对第三方库的使用。\
-          \n *Integration of GPU acceleration into the inhouse radar simulation tool chain as well as improved usage of third-party libraries integrated in this radar simulation tool chain*",
+          \n *Integration of GPU acceleration into the inhouse radar simulation tool chain as well as improved usage of third-party libraries integrated in this radar simulation tool chain.*",
         },
         {
           title: "Environmental Systems Research Institute, Inc. (ESRI)",
@@ -207,7 +207,7 @@
           md: "**<u>武汉大学ISIP *Wuhan University -ISIP Lab*</u>**\
           \n\
           \n - 基于城市环境中无障碍公共交通的数据，为残疾人出行提供更方便的指导。\
-          \n * Based on data of barrier-free public transport in urban environments, provide more convenient guidance for people with disabilities to travel.*",
+          \n *Based on data of barrier-free public transport in urban environments, provide more convenient guidance for people with disabilities to travel.*",
         },
         {
           title: "室内定位与导航研究 Research on indoor positioning and navigation",
@@ -261,7 +261,7 @@
           \n *Mr. Zhang is an intellectual and outstanding student. As the professor who taught him High-Performance GeoComputation, I found that he has demonstrated his talent in the Big Data field, and his proficient programming skills.*",
         },
         {
-          title: "鲍曙明教授 Prof. Bao Shuming",
+          title: "鲍曙明教授 Prof. Shuming Bao",
           subtitle: "中国数据中心主管，密歇根大学教授 Director of China Data Lab, Professor of UMich.",
           img: "bsm.jpg",
           file: "BSM_RL.pdf",
@@ -276,10 +276,10 @@
           file: "ZJY_RL.pdf",
           md: "**<u>美国环境系统研究所公司 *Environment System Research Institute*</u>**\
           \n\
-          \n * Jiongyan worked in ESRI R&D Center (Beijing) as a development intern for four months. The main responsibility that he took focuses on researching medical image processing algorithms and developing the backend server. The target of this project is to create a user-friendly mobile platform to monitor heart health, which corresponds to ESRI’s idea that expanding our research territory to better serve well-beings of the human life.*",
+          \n *Jiongyan worked in ESRI R&D Center (Beijing) as a development intern for four months. The main responsibility that he took focuses on researching medical image processing algorithms and developing the backend server. The target of this project is to create a user-friendly mobile platform to monitor heart health, which corresponds to ESRI’s idea that expanding our research territory to better serve well-beings of the human life.*",
         },
         {
-          title: "秦昆教授 Prof. Qin Kun",
+          title: "秦昆教授 Prof. Kun Qin",
           subtitle: "武汉大学教授，武汉大学遥感信息工程学院前副院长 Former Associate Dean of School of Remote Sensing and Info. Engineering, Wuhan University",
           img: "qk.jpeg",
           file: "QK_RL.pdf",
@@ -288,7 +288,7 @@
           \n *As Jiongyan graduate thesis tutor and his teacher of GIS principles and Spatial analysis, I think Jiongyan is an intelligent, diligent and enthusiastic student. Therefore, I am delighted to write this recommendation letter for him.*",
         },
         {
-          title: "胡涛博士 Dr. Hu Tao",
+          title: "胡涛博士 Dr. Tao Hu",
           subtitle: "俄克拉荷马州立大学助理教授 Assistant Professor in GeoHealth at Oklahoma State University",
           img: "ht.jpg",
           file: "QK_RL.pdf",
@@ -297,7 +297,7 @@
           \n *It is my great pleasure to write a reference letter for Jiongyan Zhang. I had the pleasure of serving as Jiongyan’s mentor when he was working on the COVID-19 project. I have been very impressed by his capabilities of research and programming and his great attitude of collaboration.*",
         },
         {
-          title: "孟庆祥博士 Dr. Meng Qingxiang",
+          title: "孟庆祥博士 Dr. Qingxiang Meng",
           subtitle: "武汉大学遥感信息工程学院讲师 Lecturer of School of Remote Sensing and Info. Engineering, Wuhan University",
           img: "mqx.jpg",
           file: "MQX_RL.pdf",
@@ -306,7 +306,7 @@
           \n *I have taught Jiongyan Zhang’s three courses: Development of Geographic Information Engineering Software, Geographic Information Engineering Design and Database’s Principles and Applications. He got 90+ in all the courses, which demonstrates his ability in the Data Science related field. His academic ability will support him to meet the requirements in Data Management, Data Processing and Data Analysis.*",
         },
         {
-          title: "黄文照博士 Dr. Huang Wenzhao",
+          title: "黄文照博士 Dr. Wenzhao Huang",
           subtitle: "武汉市新生命脊髓损伤者生活重建服务中心主任 Director-General of Wuhan New Life Rehabilitation Service Center for People with Spinal Cord Injury",
           img: "hwz.jpg",
           file: "HWZ_RL.pdf",

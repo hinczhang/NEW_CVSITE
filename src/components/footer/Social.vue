@@ -6,7 +6,7 @@
         <a :style="{color: color}" :href="social['github'] || 'https://github.com/manerfan'" target="_blank"><a-icon type="github" /></a>
         <!-- 微信 -->
         <a-popover arrowPointAtCenter>
-            <template slot="content"><img style="width: 200px; max-width: 80vw; height: auto;"  alt="林中小舍" src="../../assets/wechat.png"/></template>
+            <template slot="content"><img style="width: 200px; max-width: 80vw; height: auto;"  alt="张炅焱" src="../../assets/wechat.png"/></template>
             <a :style="{color: color}"><a-icon type="wechat" /></a>
         </a-popover>
         <!-- zhihu -->

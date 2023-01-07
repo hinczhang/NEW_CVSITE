@@ -16,7 +16,7 @@
                 <!-- 简介 -->
                 <span data-aos="fade-in" class="brief typer black">
                     
-                    <vue-typer :text="about.content.desc || '林舍'" :type-delay='200' eraseStyle='select-all'></vue-typer>
+                    <vue-typer :text="about.content.desc" :type-delay='200' eraseStyle='select-all'></vue-typer>
                 </span>
                 <!-- 正文 -->
                 <vue-markdown data-aos="fade-in">{{about.content.md}}</vue-markdown>

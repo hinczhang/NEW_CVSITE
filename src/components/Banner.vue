@@ -5,8 +5,8 @@
         <!-- 加载层 -->
         <div class="bg back"><h1>Content loading...</h1></div>
         <!-- 脚贴 -->
-        <div class="fork-me">
-            <a class="fork-me-link" href="https://github.com/hinczhang" target="_blank">
+        <div class="fork-me" v-on:click="lang_change">
+            <a class="fork-me-link" target="_blank">
                 <span class="fork-me-text">Github</span>
             </a>
         </div>
@@ -35,6 +35,7 @@
     import {Component, Vue} from 'vue-property-decorator';
     import {mapGetters} from 'vuex';
 
+
     // tslint:disable-next-line:no-var-requires
     import {VueTyper} from 'vue-typer';
 
@@ -45,6 +46,12 @@
         },
         computed: {
             ...mapGetters(['banner']),
+        },
+        methods: {
+            lang_change() { 
+                Vue.prototype.$CH_EN = !Vue.prototype.$CH_EN;
+                console.log(Vue.prototype.$CH_EN);
+            },
         },
     })
     export default class Banner extends Vue {
