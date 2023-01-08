@@ -43,7 +43,7 @@
 
         <!-- 小屏侧边栏抽屉 -->
         <a-drawer placement="left" :closable="true" :visible="menuDrawerVisible" @close="onMenuDrawerClose">
-            <Menu :key="isChecked" :is_ch="true" @menuClick="onMenuDrawerClose" />
+            <Menu :key="isChecked" :is_ch="isChecked" @menuClick="onMenuDrawerClose" />
         </a-drawer>
     </a-layout>
 </template>
