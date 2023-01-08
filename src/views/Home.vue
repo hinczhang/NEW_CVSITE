@@ -17,7 +17,7 @@
         <!-- 内容 -->
         <a-layout>
             <!-- 菜单 -->
-            <a-layout-sider class="layout-sider" width="320"><a-affix><Menu/></a-affix></a-layout-sider>
+            <a-layout-sider class="layout-sider" width="320"><a-affix><Menu :key="isChecked" :is_ch="isChecked"/></a-affix></a-layout-sider>
             <!-- 正文部分 -->
             <a-layout class="layout-content">
                 <!-- 小屏侧边栏抽屉按钮 -->

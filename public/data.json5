@@ -11,6 +11,7 @@
   banner: {
     anchor: {
       id: "banner",
+      v_id: "banner",
       icon: "home",
       name: "首页",
       name_en: "MainPage",
@@ -27,6 +28,7 @@
   banner_en: {
     anchor: {
       id: "banner_en",
+      v_id: "banner",
       icon: "home",
       name: "MainPage",
     },
@@ -50,6 +52,7 @@
       display: true,
       anchor: {
         id: "about",
+        v_id: "about",
         icon: "user",
         name: "关于"
       },
@@ -81,6 +84,7 @@
       display: true,
       anchor: {
         id: "about_en",
+        v_id: "about",
         icon: "user",
         name: "About"
       },
@@ -113,6 +117,7 @@
       display: true,
       anchor: {
         id: "experience",
+        v_id: "experience",
         icon: "idcard",
         name: "经历"
       },
@@ -160,6 +165,7 @@
       display: true,
       anchor: {
         id: "experience_en",
+        v_id: "experience",
         icon: "idcard",
         name: "Experience"
       },
@@ -208,6 +214,7 @@
       display: true,
       anchor: {
         id: "education",
+        v_id: "education",
         icon: "laptop",
         name: "教育"
       },
@@ -255,6 +262,7 @@
       display: true,
       anchor: {
         id: "education_en",
+        v_id: "education",
         icon: "laptop",
         name: "Education"
       },
@@ -302,6 +310,7 @@
       display: true,
       anchor: {
         id: "project",
+        v_id: "project",
         icon: "project",
         name: "项目",
       },
@@ -366,6 +375,7 @@
       anchor: {
         id: "project_en",
         icon: "project",
+        v_id: "project",
         name: "Projects",
       },
       header: {
@@ -428,6 +438,7 @@
       display: true,
       anchor: {
         id: "recommend",
+        v_id: "recommend",
         icon: "profile",
         name: "推荐信",
       },
@@ -505,6 +516,7 @@
       display: true,
       anchor: {
         id: "recommend_en",
+        v_id: "recommend",
         icon: "profile",
         name: "Recommendations",
       },

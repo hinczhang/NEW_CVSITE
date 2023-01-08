@@ -13,9 +13,13 @@
         <a-layout-content class="menu">
             <a-menu>
                 <!-- 根据配置动态模块的内容和顺序 -->
-                <a-menu-item v-if="index%2 === 0" v-for="(m, index) in menus" v-bind:key="m.id">
+                <a-menu-item v-if="is_ch&&index%2 === 0" v-for="(m, index) in menus" v-bind:key="m.id">
                     <a-icon :type="m.icon" />
-                    <a v-smooth-scroll :href="'#' + m.id" @click="closeMenuDrawer">{{m.name + ' ' + menus[index + 1].name}}</a>
+                    <a v-smooth-scroll :href="'#' + m.id" @click="closeMenuDrawer">{{m.name}}</a>
+                </a-menu-item>
+                <a-menu-item v-if="!is_ch&&index%2 === 1" v-for="(m, index) in menus" v-bind:key="m.id">
+                    <a-icon :type="m.icon" />
+                    <a v-smooth-scroll :href="'#' + m.v_id" @click="closeMenuDrawer">{{m.name}}</a>
                 </a-menu-item>
                 <!-- <a-menu-item v-if="ch-en" v-for="(m, index) in menus" v-bind:key="m.id">
                     
