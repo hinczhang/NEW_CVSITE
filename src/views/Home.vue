@@ -3,7 +3,17 @@
 <template>
     <a-layout>
         <!-- 首屏 -->
-        <a-layout-header class="layout-header"><Banner/></a-layout-header>
+        <a-layout-header class="layout-header">
+            <!-- <div class="fork-me" @click="onLanguageChange">
+                <a class="fork-me-link" target="_blank">
+                    <span class="fork-me-text">Github</span>
+                </a>
+            </div> -->
+            <a-switch class="switch-me" checked-children="EN" un-checked-children="汉" v-model:checked="isChecked"></a-switch>
+            <Banner :key="isChecked" :is_ch="isChecked" />
+            <!-- 脚贴 -->
+            
+        </a-layout-header>
         <!-- 内容 -->
         <a-layout>
             <!-- 菜单 -->
@@ -19,11 +29,11 @@
                 <a-layout-content><div id="anchor-next"></div></a-layout-content>
                 <!-- 根据配置动态模块的内容和顺序 -->
                 <a-layout-content v-for="id in moduleIds" v-bind:key="id">
-                    <About v-if="id === 'about'"/>
-                    <Experience v-if="id === 'experience'"/>
-                    <Education v-if="id === 'education'"/>
-                    <Project v-if="id === 'project'"/>
-                    <Recommend v-if="id === 'recommend'"/>
+                    <About :key="isChecked" :is_ch="isChecked" v-if="id === 'about'"/>
+                    <Experience :key="isChecked" :is_ch="isChecked" v-if="id === 'experience'"/>
+                    <Education :key="isChecked" :is_ch="isChecked" v-if="id === 'education'"/>
+                    <Project :key="isChecked" :is_ch="isChecked" v-if="id === 'project'"/>
+                    <Recommend :key="isChecked" :is_ch="isChecked" v-if="id === 'recommend'"/>
                 </a-layout-content>
                 <!-- 页脚 -->
                 <a-layout-footer><Footer/></a-layout-footer>
@@ -33,7 +43,7 @@
 
         <!-- 小屏侧边栏抽屉 -->
         <a-drawer placement="left" :closable="true" :visible="menuDrawerVisible" @close="onMenuDrawerClose">
-            <Menu @menuClick="onMenuDrawerClose" />
+            <Menu :key="isChecked" :is_ch="true" @menuClick="onMenuDrawerClose" />
         </a-drawer>
     </a-layout>
 </template>
@@ -68,7 +78,7 @@
     })
     export default class Home extends Vue {
         private menuDrawerVisible = false;
-
+        private isChecked = true;
         private toggleMenuDrawer() {
             this.menuDrawerVisible = !this.menuDrawerVisible;
         }
@@ -81,6 +91,8 @@
 
 <style scoped lang="scss">
     @import '../styles/variable';
+    @import '../styles/fork';
+    @import '../styles/switch.scss';
 
     .layout-header {
         z-index: 0;

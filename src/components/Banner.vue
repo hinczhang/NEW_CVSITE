@@ -4,12 +4,7 @@
     <div class="banner" id="banner">
         <!-- 加载层 -->
         <div class="bg back"><h1>Content loading...</h1></div>
-        <!-- 脚贴 -->
-        <div class="fork-me" v-on:click="lang_change">
-            <a class="fork-me-link" target="_blank">
-                <span class="fork-me-text">Github</span>
-            </a>
-        </div>
+        
         <!-- 背景层 -->
         <div data-aos="fade-in" class="bg"></div>
         <!-- 内容层 -->
@@ -19,9 +14,13 @@
             </span>
             <div>
                 <h1>{{banner.title}}</h1>
-                <h3 class="typer white">
-                    技能 Technique: 
+                <h3 v-if="is_ch" class="typer white">
+                    技能: 
                     <vue-typer :text="banner.desc" :type-delay='200' eraseStyle='select-all'></vue-typer>
+                </h3>
+                <h3 v-if="!is_ch" class="typer white">
+                    Technique: 
+                    <vue-typer :text="banner_en.desc" :type-delay='200' eraseStyle='select-all'></vue-typer>
                 </h3>
             </div>
         </div>
@@ -40,18 +39,14 @@
     import {VueTyper} from 'vue-typer';
 
     @Component({
+        props: ['is_ch'],
         components: {
             VueTyper,
             Badge: () => import('@/components/footer/Badge.vue'),
         },
         computed: {
             ...mapGetters(['banner']),
-        },
-        methods: {
-            lang_change() { 
-                Vue.prototype.$CH_EN = !Vue.prototype.$CH_EN;
-                console.log(Vue.prototype.$CH_EN);
-            },
+            ...mapGetters(['banner_en']),
         },
     })
     export default class Banner extends Vue {
@@ -60,7 +55,6 @@
 
 <style scoped lang="scss">
     @import '../styles/variable';
-    @import '../styles/fork';
 
     .banner {
         display: flex;

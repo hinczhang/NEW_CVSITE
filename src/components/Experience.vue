@@ -25,13 +25,18 @@
     import VueMarkdown from 'vue-markdown';
 
     @Component({
+        props: ['is_ch'],
         components: {
             ModuleHeader,
             VueMarkdown,
         },
         computed: {
             experience(): Module {
-                return this.$store.getters.getModule('experience');
+                if ( this.$props.is_ch ) {
+                    return this.$store.getters.getModule('experience');
+                } else {
+                    return this.$store.getters.getModule('experience_en');
+                }
             },
         },
     })

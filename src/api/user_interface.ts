@@ -18,6 +18,11 @@ export interface UserData {
     banner: Banner;
 
     /**
+     * 英文Banner横幅信息
+     */
+    banner_en: Banner;
+
+    /**
      * 模块
      */
     modules: Module[];

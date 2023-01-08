@@ -45,6 +45,7 @@
     import VueMarkdown from 'vue-markdown';
 
     @Component({
+        props: ['is_ch'],
         components: {
             ModuleHeader,
             ModuleSkeleton,
@@ -53,7 +54,11 @@
         },
         computed: {
             about(): Module {
-                return this.$store.getters.getModule('about');
+                if ( this.$props.is_ch ) {
+                    return this.$store.getters.getModule('about');
+                } else {
+                    return this.$store.getters.getModule('about_en');
+                }
             },
         },
         methods: {

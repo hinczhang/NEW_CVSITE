@@ -13,10 +13,21 @@
         <a-layout-content class="menu">
             <a-menu>
                 <!-- 根据配置动态模块的内容和顺序 -->
-                <a-menu-item v-for="m in menus" v-bind:key="m.id">
+                <a-menu-item v-if="index%2 === 0" v-for="(m, index) in menus" v-bind:key="m.id">
+                    <a-icon :type="m.icon" />
+                    <a v-smooth-scroll :href="'#' + m.id" @click="closeMenuDrawer">{{m.name + ' ' + menus[index + 1].name}}</a>
+                </a-menu-item>
+                <!-- <a-menu-item v-if="ch-en" v-for="(m, index) in menus" v-bind:key="m.id">
+                    
+                    <div>
+                    <a-icon :type="m.icon" />{{ index }}
+                    <a v-smooth-scroll :href="'#' + m.id" @click="closeMenuDrawer">{{m.name}}</a>
+                    </div>
+                </a-menu-item>
+                <a-menu-item v-if="!ch-en&&index%2==1" v-for="(m, index) in menus" v-bind:key="m.id">
                     <a-icon :type="m.icon" />
                     <a v-smooth-scroll :href="'#' + m.id" @click="closeMenuDrawer">{{m.name}}</a>
-                </a-menu-item>
+                </a-menu-item> -->
             </a-menu>
         </a-layout-content>
         <!-- 菜单页脚 -->
@@ -40,12 +51,13 @@
     import {mapGetters} from 'vuex';
 
     @Component({
+        props: ['is_ch'],
         components: {
             Copyrights,
             Social,
         },
         computed: {
-            ...mapGetters(['banner', 'menus']),
+            ...mapGetters(['banner', 'banner_en', 'menus']),
         },
     })
     export default class Menu extends Vue {

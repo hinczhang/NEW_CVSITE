@@ -37,13 +37,18 @@
     import VueMarkdown from 'vue-markdown';
 
     @Component({
+        props: ['is_ch'],
         components: {
             ModuleHeader,
             VueMarkdown,
         },
         computed: {
             recommend(): Module {
-                return this.$store.getters.getModule('recommend');
+                if ( this.$props.is_ch ) {
+                    return this.$store.getters.getModule('recommend');
+                } else {
+                    return this.$store.getters.getModule('recommend_en');
+                }
             },
         },
     })

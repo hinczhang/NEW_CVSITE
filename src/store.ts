@@ -24,6 +24,13 @@ export default new Vuex.Store<UserData>({
                 name: 'Home',
             },
         },
+        banner_en: {
+            anchor: {
+                id: 'banner',
+                icon: 'home',
+                name: 'Home',
+            },
+        },
         modules: [],
     },
     getters: {
@@ -35,7 +42,8 @@ export default new Vuex.Store<UserData>({
         },
         menus(state): object[] {
             // 找到可展示的模块
-            const modules = _.concat([state.banner], _.filter(state.modules, (module) => module.display));
+            const modules = _.concat([state.banner, state.banner_en],
+            _.filter(state.modules, (module) => module.display));
             // 将模块中用于menu的字段抽出
             return _.map(modules, (module) => module.anchor);
         },
@@ -48,6 +56,9 @@ export default new Vuex.Store<UserData>({
         banner(state): Banner {
             return state.banner || {};
         },
+        banner_en(state): Banner {
+            return state.banner_en || {};
+        },
         getModule: (state: UserData) => (id: string) => {
            return find(state.modules, id);
         },
@@ -57,6 +68,7 @@ export default new Vuex.Store<UserData>({
             state.title = userData.title || DEFAULT_TITLE;
             state.social = userData.social;
             state.banner = userData.banner;
+            state.banner_en = userData.banner_en;
             state.modules = userData.modules;
 
             if (DEFAULT_TITLE === document.title) {
