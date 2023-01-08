@@ -29,6 +29,14 @@
                         <span v-else>{{value}}</span>
                     </a-col>
                 </a-row>
+                <a-row style="margin: 0 auto; text-align: center;">
+                    <a-button style="margin-top: 7%;margin-right: 10%;width: 200px;" shape="round" :href="'张炅焱-简历-校招.pdf'">
+                        <a-icon type="download" /> 中文简历 (CN)
+                    </a-button>
+                    <a-button style="margin-top: 7%;width: 200px;" shape="round" :href="'ZHANGJIONGYAN-RESUME-GRADUATE.pdf'">
+                        <a-icon type="download" /> English Resume
+                    </a-button>
+                </a-row>
             </a-col>
         </a-row>
     </div>
