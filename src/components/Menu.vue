@@ -5,7 +5,7 @@
         <!-- 头像 -->
         <div class="header">
             <span class="avatar ant-avatar ant-avatar-circle ant-avatar-image">
-                <img draggable="false" src="../assets/avatar2.jpg">
+                <img draggable="false" src="../assets/avatar3.jpg">
             </span>
             <span>{{banner.name|| '张炅焱'}}</span>
         </div>

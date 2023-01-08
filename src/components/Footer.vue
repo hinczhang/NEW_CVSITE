@@ -9,7 +9,7 @@
             <a-popover arrowPointAtCenter>
                 <template slot="content"><Badge/></template>
                 <span class="avatar ant-avatar ant-avatar-circle ant-avatar-image">
-                    <img alt="张炅焱|Zhang Jiongyan" draggable="false" src="../assets/avatar3.jpg"/>
+                    <img alt="张炅焱|Zhang Jiongyan" draggable="false" src="../assets/avatar2.jpg"/>
                 </span>
             </a-popover>
         </a-col>
