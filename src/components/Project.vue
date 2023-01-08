@@ -2,7 +2,8 @@
 
 <template>
     <div class="content" id="project">
-        <ModuleHeader :title="project.header.title" :sub-title="project.header.subtitle"/>
+        <ModuleHeader v-if="is_ch" :title="project.header.subtitle" :sub-title="project.header.title"/>
+        <ModuleHeader v-if="!is_ch" :title="project.header.title" :sub-title="project.header.subtitle"/>
         <a-timeline>
             <a-timeline-item data-aos="fade-in" v-for="card in project.cards" v-bind:key="card.title + card.subtitle">
                 <a-card class="project-card" :bordered="true" style="width: 100%">

@@ -2,7 +2,8 @@
 
 <template>
     <div class="content" id="recommend">
-        <ModuleHeader :title="recommend.header.title" :sub-title="recommend.header.subtitle"/> 
+        <ModuleHeader v-if="is_ch" :title="recommend.header.subtitle" :sub-title="recommend.header.title"/>
+        <ModuleHeader v-if="!is_ch" :title="recommend.header.title" :sub-title="recommend.header.subtitle"/>
         <a-carousel dot-position="left" autoplay>
             <div style="width:100%;height: 100%;align-items: center;" v-for="card in recommend.cards" v-bind:key="card.title + card.subtitle">
                 <a-card hoverable class="recommend-card" :bordered="true" style="width: 80%">

@@ -2,7 +2,8 @@
 
 <template>
     <div class="content about" id="about">
-        <ModuleHeader :title="about.header.title" :sub-title="about.header.subtitle"/>
+        <ModuleHeader v-if="is_ch" :title="about.header.subtitle" :sub-title="about.header.title"/>
+        <ModuleHeader v-if="!is_ch" :title="about.header.title" :sub-title="about.header.subtitle"/>
         <!-- <ModuleSkeleton :display="true" :number="2" /> -->
         <a-row type="flex" justify="center" align="top">
             <!-- 头像 -->
