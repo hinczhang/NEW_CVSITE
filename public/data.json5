@@ -74,7 +74,7 @@
       },
       // key - value 数量及内容完全自定义，链接自动识别
       keys: {
-        "主页": "http://cv.standardserve.com",
+        "主页": "http://cv.standardserve.org",
         "知乎": "https://www.zhihu.com/people/pu-tong-xing-de-ce-hui-yuan",
         "专栏": "https://github.com/hinczhang",
         "领英": "https://www.linkedin.com/in/zhang-jiongyan/"
