@@ -9,7 +9,7 @@
                     <span class="fork-me-text">Github</span>
                 </a>
             </div> -->
-            <a-switch class="switch-me" checked-children="EN" un-checked-children="汉" v-model:checked="isChecked"></a-switch>
+            
             <Banner :key="isChecked" :is_ch="isChecked" />
             <!-- 脚贴 -->
             
@@ -17,7 +17,7 @@
         <!-- 内容 -->
         <a-layout>
             <!-- 菜单 -->
-            <a-layout-sider class="layout-sider" width="320"><a-affix><Menu :key="isChecked" :is_ch="isChecked"/></a-affix></a-layout-sider>
+            <a-layout-sider class="layout-sider" width="320"><a-affix><Menu v-on:changeLanguage="onLanguageChange"/></a-affix></a-layout-sider>
             <!-- 正文部分 -->
             <a-layout class="layout-content">
                 <!-- 小屏侧边栏抽屉按钮 -->
@@ -43,7 +43,7 @@
 
         <!-- 小屏侧边栏抽屉 -->
         <a-drawer placement="left" :closable="true" :visible="menuDrawerVisible" @close="onMenuDrawerClose">
-            <Menu :key="isChecked" :is_ch="isChecked" @menuClick="onMenuDrawerClose" />
+            <Menu v-on:changeLanguage="onLanguageChange" @menuClick="onMenuDrawerClose" />
         </a-drawer>
     </a-layout>
 </template>
@@ -86,13 +86,17 @@
         private onMenuDrawerClose() {
             this.menuDrawerVisible = false;
         }
+
+        private onLanguageChange(params: boolean) {
+            this.isChecked = params;
+        }
     }
 </script>
 
 <style scoped lang="scss">
     @import '../styles/variable';
     @import '../styles/fork';
-    @import '../styles/switch.scss';
+ 
 
     .layout-header {
         z-index: 0;

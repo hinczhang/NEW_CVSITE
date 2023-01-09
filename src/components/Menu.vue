@@ -5,7 +5,7 @@
         <!-- 头像 -->
         <div class="header">
             <span class="avatar ant-avatar ant-avatar-circle ant-avatar-image">
-                <img draggable="false" src="../assets/avatar3.jpg">
+                <img draggable="false" src="../assets/avatar.jpg">
             </span>
             <span>{{banner.name|| '张炅焱'}}</span>
         </div>
@@ -13,11 +13,11 @@
         <a-layout-content class="menu">
             <a-menu>
                 <!-- 根据配置动态模块的内容和顺序 -->
-                <a-menu-item v-if="is_ch&&index%2 === 0" v-for="(m, index) in menus" v-bind:key="m.id">
+                <a-menu-item v-if="isLanguageCH&&index%2 === 0" v-for="(m, index) in menus" v-bind:key="m.id">
                     <a-icon :type="m.icon" />
                     <a v-smooth-scroll :href="'#' + m.id" @click="closeMenuDrawer">{{m.name}}</a>
                 </a-menu-item>
-                <a-menu-item v-if="!is_ch&&index%2 === 1" v-for="(m, index) in menus" v-bind:key="m.id">
+                <a-menu-item v-if="!isLanguageCH&&index%2 === 1" v-for="(m, index) in menus" v-bind:key="m.id">
                     <a-icon :type="m.icon" />
                     <a v-smooth-scroll :href="'#' + m.v_id" @click="closeMenuDrawer">{{m.name}}</a>
                 </a-menu-item>
@@ -33,6 +33,9 @@
                     <a v-smooth-scroll :href="'#' + m.id" @click="closeMenuDrawer">{{m.name}}</a>
                 </a-menu-item> -->
             </a-menu>
+            <a-row class="explain">
+                语言/Язык/Language: <a-switch class="switch-me" checked-children="EN" un-checked-children="汉" v-model:checked="isLanguageCH" @change="onSwitchchange"></a-switch>
+            </a-row>
         </a-layout-content>
         <!-- 菜单页脚 -->
         <a-layout-footer class="footer">
@@ -55,7 +58,6 @@
     import {mapGetters} from 'vuex';
 
     @Component({
-        props: ['is_ch'],
         components: {
             Copyrights,
             Social,
@@ -65,15 +67,19 @@
         },
     })
     export default class Menu extends Vue {
+        private isLanguageCH = true;
         private closeMenuDrawer() {
             this.$emit('menuClick');
+        }
+        private onSwitchchange(checked: boolean | string | number, event: Event) {
+            this.$emit('changeLanguage', checked);
         }
     }
 </script>
 
 <style scoped lang="scss">
     @import '../styles/variable';
-
+    @import '../styles/switch.scss';
     .layout-menu {
         width: 100%;
         height: 100vh;

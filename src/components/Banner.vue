@@ -10,7 +10,7 @@
         <!-- 内容层 -->
         <div data-aos="fade-in" class="desc">
             <span class="avatar ant-avatar ant-avatar-circle ant-avatar-image">
-                <img draggable="false" src="../assets/avatar.jpg">
+                <img draggable="false" src="../assets/avatar3.jpg">
             </span>
             <div>
                 <h1>{{banner.title}}</h1>

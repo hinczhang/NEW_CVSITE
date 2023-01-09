@@ -47,7 +47,9 @@
 
 <style scoped lang="scss">
     @import '../styles/variable';
-
+    .content{
+        background-color:rgb(245, 245, 245);
+    }
     .education-card {
         .title {
             width: 100%;

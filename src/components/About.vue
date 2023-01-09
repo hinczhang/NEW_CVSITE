@@ -109,6 +109,7 @@
     @import '../styles/variable';
 
     .about {
+        background-color:rgb(245, 245, 245);
         .col {
             padding: 0 1rem;
         }
