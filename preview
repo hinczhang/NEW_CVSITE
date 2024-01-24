@@ -1,0 +1,4 @@
+#!/bin/bash
+npm run build
+docker rm -f resume
+docker run -it -d --rm -p 8081:80 --name resume -v $PWD/docs:/usr/share/nginx/html --privileged=true nginx

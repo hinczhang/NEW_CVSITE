@@ -1,0 +1,618 @@
+{
+  // 页面title
+  title: "张炅焱 Zhang, Jiongyan",
+  // 社交链接
+  social: {
+    github: "https://github.com/hinczhang",
+    zhihu: "https://www.zhihu.com/people/pu-tong-xing-de-ce-hui-yuan",
+    linkedin: "https://www.linkedin.com/in/zhang-jiongyan/",
+  },
+  // banner页
+  banner: {
+    anchor: {
+      id: "banner",
+      v_id: "banner",
+      icon: "home",
+      name: "首页",
+      name_en: "MainPage",
+    },
+    title: "张炅焱 Zhang, Jiongyan",
+    desc: [
+      "宽广的技术栈",
+      "计算机视觉",
+      "雷达仿真",
+      "图像处理",
+      "全栈开发",
+    ],
+  },
+  banner_en: {
+    anchor: {
+      id: "banner_en",
+      v_id: "banner",
+      icon: "home",
+      name: "MainPage",
+    },
+    title: "张炅焱 Zhang, Jiongyan",
+    desc: [
+      "Wide technique stack",
+      "Computer Vision",
+      "Radar Simulation",
+      "Image Processing",
+      "Fullstack Development",
+    ],
+  },
+  
+  // 正文
+  // 不要修改各模块的 anchor.id
+  // 通过display控制模块是否展示
+  // 通过列表顺序控制模块展示顺序
+  modules: [
+    // 关于页
+    {
+      display: true,
+      anchor: {
+        id: "about",
+        v_id: "about",
+        icon: "user",
+        name: "关于"
+      },
+      header: {
+        title: "个人简介",
+        subtitle: "about me",
+      },
+      content: {
+        name: "张炅焱",
+        desc: [
+          "咨询: 全栈, 计算机视觉, 3D, 并行计算",
+          "同样欢迎: 文学, 音乐, 历史",
+        ],
+        md: "主要专注于计算机视觉和自动驾驶。对医疗成像也有充足的兴趣。\
+        \n \
+        \n 典型的CV仔，但也有一定的语言开发能力（主要是C++ Python）。\
+        \n \
+        \n 对于阅读、俄语、音乐有一定兴趣，擅长烹饪和健身，非牡丹但目前单身，暂无感情需求，目前居住在慕尼黑，未来可能定居上海。",
+      },
+      // key - value 数量及内容完全自定义，链接自动识别
+      keys: {
+        "主页": "http://cv.standardserve.org",
+        "知乎": "https://www.zhihu.com/people/pu-tong-xing-de-ce-hui-yuan",
+        "专栏": "https://github.com/hinczhang",
+        "领英": "https://www.linkedin.com/in/zhang-jiongyan/"
+      },
+    },
+    {
+      display: true,
+      anchor: {
+        id: "about_en",
+        v_id: "about",
+        icon: "user",
+        name: "About"
+      },
+      header: {
+        title: "个人简介",
+        subtitle: "about me",
+      },
+      content: {
+        name: "Zhang, Jiongyan",
+        desc: [
+          "Ask me about: Fullstack, Computer Vision, 3D, Parallel Computing",
+          "Also welcome: Literature, Music (Classical), History",
+        ],
+        md: "\Mainly focus on Computer Vision and Automatic Driving. Also strong interest in medical imaging.\
+        \n \
+        \n Classical CV guy, also along with some certain development skills (C++ and Python). \
+        \n \
+        \n Interest in Reading, Russian and Music, good at cooking and gym, not single from birth but exactly single now, no marrying request now; living in Munich but probably will come to Shanghai later.",
+      },
+      // key - value 数量及内容完全自定义，链接自动识别
+      keys: {
+        "MainPage": "http://cv.standardserve.org/",
+        "Zhihu": "https://www.zhihu.com/people/pu-tong-xing-de-ce-hui-yuan",
+        "Github": "https://github.com/hinczhang",
+        "LinkedIn": "https://www.linkedin.com/in/zhang-jiongyan/"
+      },
+    },
+    // 履历
+    {
+      display: true,
+      anchor: {
+        id: "experience",
+        v_id: "experience",
+        icon: "idcard",
+        name: "经历"
+      },
+      header: {
+        title: "工作经历",
+        subtitle: "Work experience",
+      },
+      cards: [
+        {
+          title: "General Motors Cruise LLC.",
+          subtitle: "2022-10 to 2023-09",
+          md: "**<u>雷达仿真实习生</u>**\
+          \n\
+          \n - 支持用于自主应用的高级雷达系统建模的雷达仿真。\
+          \n - 帮助生成支持工具，例如USD格式的转换以供雷达模拟工具使用。\
+          \n - 将GPU加速集成到内部雷达仿真工具链中，改进对第三方库的使用。",
+        },
+        {
+          title: "美国环境系统研究所公司 (ESRI)",
+          subtitle: "2021-04 to 2021-08",
+          md: "**<u>开发实习生</u>**\
+          \n - 负责实验数据的收集和整理，并且进行预处理。\
+          \n - 开发和优化时空域/频域的医疗图像处理算法。\
+          \n - 帮助开发项目软件的后端NodeJS服务器。"
+        },
+        {
+          title: "武汉大学",
+          subtitle: "2021-03 to 2021-06",
+          md: "**<u>教学助理</u>**\
+          \n\
+          \n - 辅助地理信息系统基础一课的教学和作业布置任务（中科院院士，龚健雅教授；秦昆教授）。",
+        },
+        {
+          title: "武汉大学 ISIP Lab",
+          subtitle: "2020-09 to 2021-06",
+          md: "**<u>研究助理</u>**\
+          \n\
+          \n - 研究基于航空网络和相关数据集的复杂网络理论。\
+          \n - 协助开发NSFC平台，通过设计前端可视化展示网络关系。\
+          \n - 协助申请国家自然科学基金。",
+        },
+      ],
+    },
+    {
+      display: true,
+      anchor: {
+        id: "experience_en",
+        v_id: "experience",
+        icon: "idcard",
+        name: "Experience"
+      },
+      header: {
+        title: "工作经历",
+        subtitle: "Work experience",
+      },
+      cards: [
+        {
+          title: "General Motors Cruise LLC.",
+          subtitle: "2022-10 to 2023-09",
+          md: "**<u>Intern Radar Simulation</u>**\
+          \n\
+          \n Support for the radar simulation for modeling of advanced radar systems for autonomous applications.\
+          \n Help in generating support tools for e.g. the conversion of the USD format for radar simulation tool usage.\
+          \n Integration of GPU acceleration into the inhouse radar simulation tool chain as well as improved usage of third-party libraries integrated in this radar simulation tool chain.",
+        },
+        {
+          title: "Environmental Systems Research Institute, Inc. (ESRI)",
+          subtitle: "2021-04 to 2021-08",
+          md: "**<u>Intern Development</u>**\
+          \n Prepare data for the experiment, Data pre-processing.\
+          \n Develop and optimize medical digital image processing algorithms in spatial/frequent domains.\
+          \n Assist to develop the NodeJS backend server for the project."
+        },
+        {
+          title: "Wuhan University",
+          subtitle: "2021-03 to 2021-06",
+          md: "**<u>Teaching Assistant</u>**\
+          \n\
+          \n Assist in teaching and schoolwork tasks of the course Foundation of Geographic Information System for (Academician of CAS, Prof. Gong, Jianyan; Prof. Qin, Kun).",
+        },
+        {
+          title: "ISIP Lab, Wuhan University",
+          subtitle: "2020-09 to 2021-06",
+          md: "**<u>Research Assistant</u>**\
+          \n\
+          \n Research the complex network theory based on the flight network and correlated datasets.\
+          \n Assist to develop the NSFC platform for displaying network relationship via frontend development.\
+          \n Assist to apply for National Natural Science Foundation of China.",
+        },
+      ],
+    },
+    // 教育
+    {
+      display: true,
+      anchor: {
+        id: "education",
+        v_id: "education",
+        icon: "laptop",
+        name: "教育"
+      },
+      header: {
+        title: "教育经历",
+        subtitle: "Education experience",
+      },
+      cards: [
+        {
+          title: "慕尼黑工业大学",
+          subtitle: "2021-10 to 2023-09",
+          md: "**<u>硕士研究生</u>**\
+          \n\
+          \n**专业**：制图学和地理信息系统\
+          \n\
+          \n - 第一、第二学期项目奖学金获得者。",
+        },
+        {
+          title: "巴黎综合理工",
+          subtitle: "2022-01 to 2022-03",
+          md: "**<u>硕士交换生</u>**\
+          \n\
+          \n**专业**：并行和分布式算法\
+          \n\
+          \n - 获得B等级。",
+        },
+        {
+          title: "武汉大学",
+          subtitle: "2017-09 to 2021-06",
+          md: "**<u>本科生</u>**\
+          \n\
+          \n**专业**：遥感科学与技术\
+          \n\
+          \n - 武汉大学奖学金 [2017 2018]\
+          \n - 武汉大学优秀学生 [2017 2018] \
+          \n - MCM/ICM的S和H奖 [2018 2019]\
+          \n - Mathrocup数学建模竞赛三等奖 [2019]\
+          \n - 中国国际数学建模竞赛二等奖 [2019]\
+          \n - 亚太数学建模竞赛H奖 [2019]\
+          \n - 武汉大学优秀毕业论文 [2021]",
+        },
+      ],
+    },
+    {
+      display: true,
+      anchor: {
+        id: "education_en",
+        v_id: "education",
+        icon: "laptop",
+        name: "Education"
+      },
+      header: {
+        title: "教育经历",
+        subtitle: "Education experience",
+      },
+      cards: [
+        {
+          title: "Technische Universität München (TUM)",
+          subtitle: "2021-10 to 2023-09",
+          md: "**<u>Master Student</u>**\
+          \n\
+          \n**Major**：Cartography\
+          \n\
+          \n Scholarship of Cartography in TU Munich for 1st, 2nd Semester.",
+        },
+        {
+          title: "École polytechnique, école d'ingénieur",
+          subtitle: "2022-01 to 2022-03",
+          md: "**<u>Master Exchange Student</u>**\
+          \n\
+          \n**Major**：Algorithmique parallèle et distribuée\
+          \n Obtain B Grade.",
+        },
+        {
+          title: "Wuhan University (WHU)",
+          subtitle: "2017-09 to 2021-06",
+          md: "**<u>Bachelor Student</u>**\
+          \n\
+          \n**Major**：Remote Sensing Science and Technology\
+          \n\
+          \n - Wuhan University Scholarship [2017 2018] \
+          \n - Wuhan University Elite Student [2017 2018] \
+          \n - S and H prize of MCM/ICM [2018 2019] \
+          \n - Third prize of Mathorcup University Mathematical Modeling Competition [2019] \
+          \n - Second prize of China International Mathematical Modeling Competition [2019] \
+          \n - H prize of Asia and Pacific Mathematical Contest in Modeling [2019] \
+          \n - Excellent Graduate Thesis of Wuhan University [2021]",
+        },
+      ],
+    },
+    // 项目页
+    {
+      display: true,
+      anchor: {
+        id: "project",
+        v_id: "project",
+        icon: "project",
+        name: "项目",
+      },
+      header: {
+        title: "项目",
+        subtitle: "Projects",
+      },
+      cards: [
+        {
+          title: "基于遥感影像的无监督灾害区域检测",
+          subtitle: "2023-03 to 2023-05",
+          img: "disaster.jpg",
+          md: "**<u>慕尼黑工业大学</u>**\
+          \n\
+          \n - 利用生成式和判别式网络对于特定地区无灾害（正常）遥感时序图像进行学习，进而判别受灾图像的受灾特征和区域。主要负责Benchmark工作以及网络架构调整。\n\
+             - Github: https://github.com/hinczhang/Temporal-Remote-Sensing-Image-Detection-of-Natural-Disasters (temporarily private repo)"
+        },
+        {
+          title: "无人机视频的异常检测",
+          subtitle: "2022-07 to 2022-11",
+          img: "DLR.png",
+          md: "**<u>德国宇航中心</u>**\
+          \n\
+          \n - 协助德国宇航中心(DLR)利用无监督学习的方式执行无人机视频异常检测研究。尝试使用无监督学习的方式应对大规模且极为不平衡（极少正样本）的数据集，赋予无人机野外监测异常目标的能力\n\
+             - 相关论文：Pu Jin, Jiongyan Zhang, Lichao Mou, Xiao Xiang Zhu. UAV-Anomaly: Anomaly Detection in UAV Videos. ISPRS journal of photogrammetry and remote sensing, in press. \n\
+             - Github: https://github.com/hinczhang/Drone-Surveillance-Video-Anomaly-Detection (temporarily private repo)",
+        },
+        {
+          title: "COVID-19与全球航空网络关系的研究",
+          subtitle: "2020-04 to 2021-06",
+          img: "flight.jpg",
+          md: "**<u>武汉大学ISIP Lab</u>**\
+          \n\
+          \n - 分析疫情对航空网络的影响。根据2020年航空网络的特点，进行了时间序列分析和空间分析。",
+        },
+        {
+          title: "残障人士公交出行路线规划工具",
+          subtitle: "2020-04 to 2020-11",
+          img: "disabled.jpg",
+          md: "**<u>武汉大学ISIP Lab</u>**\
+          \n\
+          \n - 基于城市环境中无障碍公共交通的数据，为残疾人出行提供更方便的指导。",
+        },
+        {
+          title: "室内定位与导航研究",
+          subtitle: "2019-07 to 2020-07",
+          img: "indoor.jpg",
+          md: "**<u>武汉大学遥感院</u>**\
+          \n\
+          \n - 通过尽少使用的外部硬件，开发适合日常生活的室内定位和导航方法，建立室内地图和全自动导航系统。",
+        },
+        {
+          title: "利用夜光遥感研究新兴城市发展状况和周边带动关系",
+          subtitle: "2018-04 to 2019-04",
+          img: "nightlight.jpg",
+          md: "**<u>武汉大学遥感院</u>**\
+          \n\
+          \n - 该项目基于DMSP / OLS系统获取的夜光遥感数据，分析了新兴城市近年来的发展状况。",
+        },
+        {
+          title: "基于轨迹的人类行为判断、聚类和分析",
+          subtitle: "2018-01 to 2019-07",
+          img: "human.png",
+          md: "**<u>武汉大学遥感院</u>**\
+          \n\
+          \n - 该项目利用人轨迹特征来判别轨迹属性和归属人。负责进行数据预处理和采集软件开发。",
+        },
+      ],
+
+    },
+    {
+      display: true,
+      anchor: {
+        id: "project_en",
+        icon: "project",
+        v_id: "project",
+        name: "Projects",
+      },
+      header: {
+        title: "项目",
+        subtitle: "Projects",
+      },
+      cards: [
+        {
+          title: "Temporal remote sensing image detection of natural disasters",
+          subtitle: "2023-03 to 2023-05",
+          img: "disaster.jpg",
+          md: "**<u>Technische Universität München (TUM)</u>**\
+          \n\
+          \n - Utilizing generative and discriminative networks to learn from specific region's disaster-free (normal) remote sensing time-series images, and subsequently discriminate disaster features and regions in the affected images. \n\
+             - Github: https://github.com/hinczhang/Temporal-Remote-Sensing-Image-Detection-of-Natural-Disasters (temporarily private repo)",
+        },
+        {
+          title: "UAV video anomaly detection",
+          subtitle: "2022-07 to 2022-11",
+          img: "DLR.png",
+          md: "**<u>Deutsches Zentrum für Luft- und Raumfahrt</u>**\
+          \n\
+          \n - Assisting the German Aerospace Center (DLR) in performing anomaly detection research on drone videos using unsupervised learning. Try to use unsupervised learning to deal with large-scale and extremely unbalanced (very few positive samples) data sets, and endow drones with the ability to monitor abnormal targets in the field.\n\
+             - Paper：Pu Jin, Jiongyan Zhang, Lichao Mou, Xiao Xiang Zhu. UAV-Anomaly: Anomaly Detection in UAV Videos. ISPRS journal of photogrammetry and remote sensing, in press. \n\
+             - Github: https://github.com/hinczhang/Drone-Surveillance-Video-Anomaly-Detection (temporarily private repo)",
+        },
+        
+        {
+          title: "Research on the relationship between COVID-19 and the global flight network",
+          subtitle: "2020-04 to 2021-06",
+          img: "flight.jpg",
+          md: "**<u>Wuhan University - ISIP Lab</u>**\
+          \n\
+          \n Analyze the impact of the outbreak on the aviation network. Time series analysis and spatial analysis were carried out according to the characteristics of the aviation network in 2020",
+        },
+        {
+          title: "Development of travel assistance app for the disabled",
+          subtitle: "2020-04 to 2020-11",
+          img: "disabled.jpg",
+          md: "**<u>Wuhan University - ISIP Lab</u>**\
+          \n\
+          \n Based on data of barrier-free public transport in urban environments, provide more convenient guidance for people with disabilities to travel.",
+        },
+        {
+          title: "Research on indoor positioning and navigation",
+          subtitle: "2019-07 to 2020-07",
+          img: "indoor.jpg",
+          md: "**<u>School of Remote Sensing and Info. Engineering, Wuhan University</u>**\
+          \n\
+          \n By using as little external hardware as possible, develop indoor positioning and navigation methods suitable for daily life, and establish indoor maps and fully automatic navigation systems.",
+        },
+        {
+          title: "Research on Night-time Remote Sensing",
+          subtitle: "2018-04 to 2019-04",
+          img: "nightlight.jpg",
+          md: "**<u>School of Remote Sensing and Info. Engineering, Wuhan University</u>**\
+          \n\
+          \n Based on the remote sensing data of night-time light obtained by DMSP / OLS system, this project analyses the development status of emerging cities in recent years.",
+        },
+        {
+          title: "Human behaviour judgment, clustering and analysis based on human trajectory",
+          subtitle: "2018-01 to 2019-07",
+          img: "human.png",
+          md: "**<u>School of Remote Sensing and Info. Engineering, Wuhan University</u>**\
+          \n\
+          \n The project tries to record human daily trajectories to analyse their habits and use deep learning to explore the daily pattern. I mainly conduct data analysis and the development of Android data acquisition software.",
+        },
+      ],
+
+    },
+    {
+      display: true,
+      anchor: {
+        id: "recommend",
+        v_id: "recommend",
+        icon: "profile",
+        name: "推荐信",
+      },
+      header: {
+        title: "推荐信 (英文)",
+        subtitle: "Recommendations",
+      },
+      cards: [
+        {
+          title: "乐鹏教授",
+          subtitle: "武汉大学遥感信息工程学院副院长",
+          img: "yp.jpeg",
+          file: "YP_RL.pdf",
+          md: "**<u>武汉大学遥感信息工程学院</u>**\
+          \n\
+          \n *Mr. Zhang is an intellectual and outstanding student. As the professor who taught him High-Performance GeoComputation, I found that he has demonstrated his talent in the Big Data field, and his proficient programming skills.*",
+        },
+        {
+          title: "鲍曙明教授",
+          subtitle: "中国数据中心主管，密歇根大学教授",
+          img: "bsm.jpg",
+          file: "BSM_RL.pdf",
+          md: "**<u>中国数据中心</u>**\
+          \n\
+          \n *Jiongyan demonstrated strong research and programming skills and desiresfor challenging work during the project. He finished one paper titled as Spatiotemporal Responses of Global Flight Networks to the COVID-19 Epidemic for journal publication mostly based on his own work.*",
+        },
+        {
+          title: "张剑宇先生",
+          subtitle: "ESRI北京研发中心主管",
+          img: "mxz.jpg",
+          file: "ZJY_RL.pdf",
+          md: "**<u>美国环境系统研究所公司</u>**\
+          \n\
+          \n *Jiongyan worked in ESRI R&D Center (Beijing) as a development intern for four months. The main responsibility that he took focuses on researching medical image processing algorithms and developing the backend server. The target of this project is to create a user-friendly mobile platform to monitor heart health, which corresponds to ESRI’s idea that expanding our research territory to better serve well-beings of the human life.*",
+        },
+        {
+          title: "秦昆教授",
+          subtitle: "武汉大学教授，武汉大学遥感信息工程学院前副院长",
+          img: "qk.jpeg",
+          file: "QK_RL.pdf",
+          md: "**<u>武汉大学遥感信息工程学院</u>**\
+          \n\
+          \n *As Jiongyan graduate thesis tutor and his teacher of GIS principles and Spatial analysis, I think Jiongyan is an intelligent, diligent and enthusiastic student. Therefore, I am delighted to write this recommendation letter for him.*",
+        },
+        {
+          title: "胡涛博士",
+          subtitle: "俄克拉荷马州立大学助理教授",
+          img: "ht.jpg",
+          file: "HT_RL.pdf",
+          md: "**<u>俄克拉荷马州立大学</u>**\
+          \n\
+          \n *It is my great pleasure to write a reference letter for Jiongyan Zhang. I had the pleasure of serving as Jiongyan’s mentor when he was working on the COVID-19 project. I have been very impressed by his capabilities of research and programming and his great attitude of collaboration.*",
+        },
+        {
+          title: "孟庆祥博士",
+          subtitle: "武汉大学遥感信息工程学院讲师",
+          img: "mqx.jpg",
+          file: "MQX_RL.pdf",
+          md: "**<u>武汉大学遥感信息工程学院</u>**\
+          \n\
+          \n *I have taught Jiongyan Zhang’s three courses: Development of Geographic Information Engineering Software, Geographic Information Engineering Design and Database’s Principles and Applications. He got 90+ in all the courses, which demonstrates his ability in the Data Science related field. His academic ability will support him to meet the requirements in Data Management, Data Processing and Data Analysis.*",
+        },
+        {
+          title: "黄文照博士",
+          subtitle: "武汉市新生命脊髓损伤者生活重建服务中心主任",
+          img: "hwz.jpg",
+          file: "HWZ_RL.pdf",
+          md: "**<u>武汉市新生命脊髓损伤者生活重建服务中心</u>**\
+          \n\
+          \n *Mr. Zhang has been a graduate student supervised by Prof. Qin. During the period we got along together, he was patient and modest enough to quickly learn new knowledge, which shows that he has a passion for experiencing new things. Furthermore, he also actively practised new knowledge just learned, bringing surprises for us in every routine meeting.*",
+        },
+      ],
+    },
+    {
+      display: true,
+      anchor: {
+        id: "recommend_en",
+        v_id: "recommend",
+        icon: "profile",
+        name: "Recommendations",
+      },
+      header: {
+        title: "推荐信 (英文)",
+        subtitle: "Recommendations",
+      },
+      cards: [
+        {
+          title: "Prof. Peng Yue",
+          subtitle: "Associate Dean of School of Remote Sensing and Info. Engineering, Wuhan University",
+          img: "yp.jpeg",
+          file: "YP_RL.pdf",
+          md: "**<u>School of Remote Sensing and Info. Engineering, Wuhan University</u>**\
+          \n\
+          \n *Mr. Zhang is an intellectual and outstanding student. As the professor who taught him High-Performance GeoComputation, I found that he has demonstrated his talent in the Big Data field, and his proficient programming skills.*",
+        },
+        {
+          title: "Prof. Shuming Bao",
+          subtitle: "Director of China Data Lab, Professor of UMich.",
+          img: "bsm.jpg",
+          file: "BSM_RL.pdf",
+          md: "**<u>China Data Lab of UMich.</u>**\
+          \n\
+          \n *Jiongyan demonstrated strong research and programming skills and desiresfor challenging work during the project. He finished one paper titled as Spatiotemporal Responses of Global Flight Networks to the COVID-19 Epidemic for journal publication mostly based on his own work.*",
+        },
+        {
+          title: "Mr. Moxie Zhang",
+          subtitle: "General Manager of ESRI R&D Center Beijing",
+          img: "mxz.jpg",
+          file: "ZJY_RL.pdf",
+          md: "**<u>Environment System Research Institute</u>**\
+          \n\
+          \n *Jiongyan worked in ESRI R&D Center (Beijing) as a development intern for four months. The main responsibility that he took focuses on researching medical image processing algorithms and developing the backend server. The target of this project is to create a user-friendly mobile platform to monitor heart health, which corresponds to ESRI’s idea that expanding our research territory to better serve well-beings of the human life.*",
+        },
+        {
+          title: "Prof. Kun Qin",
+          subtitle: "Former Associate Dean of School of Remote Sensing and Info. Engineering, Wuhan University",
+          img: "qk.jpeg",
+          file: "QK_RL.pdf",
+          md: "**<u>School of Remote Sensing and Info. Engineering, Wuhan University</u>**\
+          \n\
+          \n *As Jiongyan graduate thesis tutor and his teacher of GIS principles and Spatial analysis, I think Jiongyan is an intelligent, diligent and enthusiastic student. Therefore, I am delighted to write this recommendation letter for him.*",
+        },
+        {
+          title: "Dr. Tao Hu",
+          subtitle: "Assistant Professor in GeoHealth at Oklahoma State University",
+          img: "ht.jpg",
+          file: "HT_RL.pdf",
+          md: "**<u>Oklahoma State University</u>**\
+          \n\
+          \n *It is my great pleasure to write a reference letter for Jiongyan Zhang. I had the pleasure of serving as Jiongyan’s mentor when he was working on the COVID-19 project. I have been very impressed by his capabilities of research and programming and his great attitude of collaboration.*",
+        },
+        {
+          title: "Dr. Qingxiang Meng",
+          subtitle: "Lecturer of School of Remote Sensing and Info. Engineering, Wuhan University",
+          img: "mqx.jpg",
+          file: "MQX_RL.pdf",
+          md: "**<u>School of Remote Sensing and Info. Engineering, Wuhan University</u>**\
+          \n\
+          \n *I have taught Jiongyan Zhang’s three courses: Development of Geographic Information Engineering Software, Geographic Information Engineering Design and Database’s Principles and Applications. He got 90+ in all the courses, which demonstrates his ability in the Data Science related field. His academic ability will support him to meet the requirements in Data Management, Data Processing and Data Analysis.*",
+        },
+        {
+          title: "Dr. Wenzhao Huang",
+          subtitle: "Director-General of Wuhan New Life Rehabilitation Service Center for People with Spinal Cord Injury",
+          img: "hwz.jpg",
+          file: "HWZ_RL.pdf",
+          md: "**<u>Wuhan New Life Rehabilitation Service Center for People with Spinal Cord Injury</u>**\
+          \n\
+          \n *Mr. Zhang has been a graduate student supervised by Prof. Qin. During the period we got along together, he was patient and modest enough to quickly learn new knowledge, which shows that he has a passion for experiencing new things. Furthermore, he also actively practised new knowledge just learned, bringing surprises for us in every routine meeting.*",
+        },
+      ],
+    },
+  ],
+  
+}
